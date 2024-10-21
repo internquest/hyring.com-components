@@ -1,3 +1,5 @@
+const { transform } = require('next/dist/build/swc');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -9,6 +11,10 @@ module.exports = {
     extend: {
       screens: {
         'xs': '540px',
+        'md3': '900px',
+        'lg2': '1100px',
+        'lg3': '1180px',
+        'lg4': '1220px'
       },
       fontFamily: {
         SpaceGrotesk: ["var(--font-space-grotesk)"],
@@ -16,6 +22,9 @@ module.exports = {
       animation: {
         "fill": "fill 8s linear forwards",
         'scroll': 'scroll 40s linear infinite',
+        'growBorder': 'growBorder 2.5s ease-in-out infinite',
+        'scaleInOut': 'scaleInout 3s ease-in-out forwards',
+
       },
       keyframes: {
         "fill": {
@@ -29,7 +38,31 @@ module.exports = {
           '100%': {
             transform: 'translateX(-100%)',
           }
+        },
+        'growBorder': {
+          "0%": {
+            transform: 'scale(1)',
+            opacity: 1,
+          },
+          "100%": {
+            transform: 'scale(1.5)',
+            opacity: 0,
+          }
+        },
+        'scaleInout':
+        {
+          "0%": {
+            transform: 'scale(0)',
+          },
+          "50%": {
+            transform: 'scale(1)',
+          },
+          "100%": {
+            transform: 'scale(0)',
+          }
         }
+
+
       },
       colors: {
         background: "var(--background)",

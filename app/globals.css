@@ -42,6 +42,10 @@ body {
     @apply flex overflow-x-hidden relative
   }
 
+  .border-primary {
+    @apply border-[#9ce56d]
+  }
+
   .marquee {
     @apply flex-grow-0 flex-shrink-0 basis-auto min-w-full z-[1] flex items-center animate-scroll
   }
@@ -53,6 +57,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+
 }
 
 

@@ -3,6 +3,8 @@ import Image from "next/image";
 import Optionsbar from "./components/Optionsbar";
 import Options from "./components/Options";
 import Marqueecompo from "./components/Marqueecompo";
+import Workflowinfo from "./components/Workflowinfo";
+import Faqs from "./components/Faqs";
 
 export default function Home() {
   return (
@@ -31,7 +33,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="relative w-full bg-[#e9ebe6] pt-12 lg:pt-16 xl:pt-20">
+      <div class="relative w-full bg-[#e9ebe6] pt-12 lg:pt-16 xl:pt-20 pb">
         <div class="flex-center justify-center w-full px-4 lg:px-5 xl:px-8">
           <section class="w-full max-w-[1152px]">
             <div class="flex flex-col">
@@ -90,6 +92,20 @@ export default function Home() {
           <div class="h-20 w-full rounded-b-[50%_50px] bg-[#E9EBE6] lg:h-32 lg:rounded-b-[70%_150px] xl:h-40"></div>
         </div>
       </div>
+
+      <div class="w-full md:px-5 xl:px-8 bg-[#f8f8f8] xl:pt-[80px]" >
+        <div class="relative mx-auto flex h-[470px] w-full max-w-[1280px] overflow-hidden px-4 !font-SpaceGrotesk md:rounded-[16px] md3:rounded-[20px]">
+          <Image src={'https://screener.hyring.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHomeGreenBg.5b1fbade.png&w=1920&q=75'} alt="background-image" fill className="absolute h-full w-full object-cover text-transparent " />
+          <div class="absolute -left-[86px] -top-[80px] h-[219px] w-[219px] rounded-full bg-[#9CE56D] opacity-40 blur-[70px]"></div>
+          <div class="absolute -bottom-[180px] -right-[92px] h-[219px] w-[219px] rounded-full bg-[#9CE56D] opacity-50 blur-[80px]"></div>
+          <Workflowinfo />
+          <div class="z-10 flex w-full flex-col pt-10 xs:w-2/3 sm:justify-center sm:pt-0 md:pl-5 md3:w-1/2 lg:pl-10 lg3:pl-24"><h1 class="mb-5 text-[34px]/[40px] font-bold tracking-[-0.5px] text-grey98 md3:text-[42px]/[48px] lg2:whitespace-nowrap lg3:text-[50px]/[56px]">Fits right into your workflow</h1><p class="text-wrap text-[20px] tracking-[-0.5px] text-[#F5F5F5] md3:text-2xl">We have Zapier, Whatsapp and Slack integrations as of now.</p></div>
+
+        </div>
+      </div>
+
+
+      <Faqs />
 
 
     </div>
