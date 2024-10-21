@@ -5,6 +5,7 @@ import Options from "./components/Options";
 import Marqueecompo from "./components/Marqueecompo";
 import Workflowinfo from "./components/Workflowinfo";
 import Faqs from "./components/Faqs";
+import Unique from "./components/Unique";
 
 export default function Home() {
   return (
@@ -21,18 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="mb-12 bg-[#f8f8f8] px-2 md:mb-[100px] md:px-4">
-        <div class="mx-auto w-full max-w-[1280px]">
-          <div class="sticky top-5 md:top-3">
-            <div class="pb-[30px] md:pb-[45px]">
-              <Marqueecompo />
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
+      <Unique />
       <div class="relative w-full bg-[#e9ebe6] pt-12 lg:pt-16 xl:pt-20 pb">
         <div class="flex-center justify-center w-full px-4 lg:px-5 xl:px-8">
           <section class="w-full max-w-[1152px]">

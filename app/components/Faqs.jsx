@@ -1,6 +1,22 @@
 import React from 'react'
+import FaqINdividual from './FaqINdividual'
 
 const Faqs = () => {
+    const faqs = [
+        {
+            question: 'What types of interviews can we conduct?',
+            solution: 'We offer a wide range of interview types, including video interviews, phone interviews, and in-person interviews. We also offer customized interview packages for your team.',
+            identity: 'panel1'
+        },
+        {
+            question: 'What types of interviews can we conduct?',
+            solution: 'We offer a wide range of interview types, including video interviews, phone interviews, and in-person interviews. We also offer customized interview packages for your team.', identity: 'panel2'
+        },
+        {
+            question: 'What types of interviews can we conduct?',
+            solution: 'we offer a wide range of interview types, including video interviews, phone interviews, and in-person interviews. We also offer customized interview packages for your team.', identity: 'panel3'
+        }
+    ]
     return (
         <div class="w-full md:px-5 xl:px-8 bg-[#f8f8f8]">
             <div class="m-auto w-full max-w-[1000px] px-4 py-12 !font-SpaceGrotesk md:px-5 md:py-[100px] lg4:px-0">
@@ -9,6 +25,12 @@ const Faqs = () => {
                 <div class="flex ">
                     <div class="mt-2 w-full">
 
+                        {
+                            faqs.map((faq, index) => (
+                                <FaqINdividual key={index} question={faq.question} solution={faq.solution} identity={faq.identity} />
+                            ))
+                        }
+                        {/* <FaqINdividual question={'What types of interviews can we conduct?'} solution={'We offer a wide range of interview types, including video interviews, phone interviews, and in-person interviews. We also offer customized interview packages for your team.'} identity={'panel1'} /> */}
                     </div>
 
                 </div>
