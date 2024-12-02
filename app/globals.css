@@ -66,6 +66,14 @@ body {
     @apply before:bg-none
   }
 
+  /* .MuiAccordionSummary-content.css-7iurs7-MuiAccordionSummary-content.Mui-expanded{
+    @apply my-3
+  }
+   */
+  /* .css-7iurs7-MuiAccordionSummary-content.Mui-expanded{
+    @apply !my-4
+  } */
+
   /* .css-7iurs7-MuiAccordionSummary-content {
     @apply my-0
   }
@@ -78,7 +86,10 @@ body {
 
 }
 
-
+.MuiAccordionSummary-content.css-7iurs7-MuiAccordionSummary-content.Mui-expanded{
+  margin-top: 12px;
+  mask-border: 12px;
+}
 ::-webkit-scrollbar {
   display: none;
 }

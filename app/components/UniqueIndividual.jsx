@@ -20,12 +20,11 @@ const UniqueIndividual = ({ parentRef, bglecolor, bgricolor, id }) => {
 
     useMotionValueEvent(scalevalue, 'change', (x) => {
         const isatoffset = indivref.current.getBoundingClientRect().top > 180
-        if (isatoffset) {
+        // if (isatoffset) {
 
-            setTopoffset(isatoffset)
-        } else {
-            setTopoffset(false)
-        }
+        setTopoffset(isatoffset)
+
+        // }
         if (isatoffset) {
             // console.log();
             // console.log(x);
