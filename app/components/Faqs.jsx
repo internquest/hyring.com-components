@@ -5,7 +5,7 @@ const Faqs = () => {
     const faqs = [
         {
             question: 'What types of interviews can we conduct?',
-            solution: 'We offer a wide range of interview types, including video interviews, phone interviews, and in-person interviews. We also offer customized interview packages for your team.',
+            solution: 'In a <span class="font-bold">"one-way interview"</span>, the AI asks predefined questions set by you. In a two-way interview, the AI engages in a dynamic, human-like conversation with the candidate, simulating a real-time, interactive interview experience.',
             identity: 'panel1'
         },
         {
