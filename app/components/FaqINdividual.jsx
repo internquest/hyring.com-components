@@ -55,7 +55,7 @@ const FaqINdividual = ({ question, solution, indexed }) => {
 
     return (
         <>
-            <motion.button onClick={() => handleClick()} type="button" class="!border-[#0e0f0c2e] rounded-[10px] border">
+            <motion.button onClick={() => handleClick()} type="button" class="!border-[#0e0f0c2e] mb-[1.25rem] rounded-[10px] border">
                 <div class={` ${open && 'bg-[rgb(237,239,236)]'}  box-border flex items-center md:text-[20px] md:pt-5 md:pr-5 md:pl-[30px] md:pb-5 text-[#0e0f0c] tracking-[-.5px] py-[22px] px-[1.25rem] rounded-tr-[10px] rounded-tl-[10px] gap-[1.25rem]   cursor-pointer font-semibold   leading-[24px]  justify-between`}>
                     <p class=" border-[solid] border-[#383838] box-border m-0 max-w-none ">{question}</p>
 
